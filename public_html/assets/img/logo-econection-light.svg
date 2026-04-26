@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 90" width="360" height="90" role="img" aria-label="ECONECTION — Conexiones con Causa">
+  <defs>
+    <linearGradient id="ec-mark-blue-l" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1BA7D7"></stop><stop offset="1" stop-color="#0C63C9"></stop>
+    </linearGradient>
+    <linearGradient id="ec-mark-green-l" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#8CCB2A"></stop><stop offset="1" stop-color="#3E9E22"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 8)">
+    <path d="M37 2 C 35 22, 22 35, 2 37 C 22 39, 35 52, 37 72 Z" fill="url(#ec-mark-blue-l)"></path>
+    <path d="M37 2 C 39 22, 52 35, 72 37 C 52 39, 39 52, 37 72 Z" fill="url(#ec-mark-green-l)"></path>
+  </g>
+  <text x="100" y="48" font-family="&#39;Plus Jakarta Sans&#39;, system-ui, -apple-system, sans-serif" font-weight="700" font-size="30" letter-spacing="1" fill="#FFFFFF">ECONECTION</text>
+  <text x="101" y="72" font-family="&#39;Fraunces&#39;, Georgia, serif" font-style="italic" font-weight="400" font-size="16" fill="rgba(255,255,255,0.78)">Conexiones con Causa</text>
+</svg>
