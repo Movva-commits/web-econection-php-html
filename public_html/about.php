@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Sobre nosotros — econection';
-$page_description = 'Conoce la historia, valores y equipo detrás de econection: 11 años conectando comunidades, voluntarios y aliados en toda Latinoamérica.';
+$page_title       = 'Nosotros — ECONECTION';
+$page_description = 'Conoce el enfoque de ECONECTION: una agencia de marketing social y fundraising que crea conexiones con causa entre organizaciones, equipos y personas.';
 $current_page     = 'about';
 include __DIR__ . '/includes/header.php';
 include __DIR__ . '/includes/nav.php';
@@ -16,30 +16,57 @@ include __DIR__ . '/includes/nav.php';
                     <span aria-hidden="true">/</span>
                     <span>Nosotros</span>
                 </nav>
-                <span class="eyebrow">Nuestra historia</span>
-                <h1>Once años tejiendo redes que <span class="italic-accent">sostienen</span> el cambio.</h1>
+                <span class="eyebrow">Sobre ECONECTION</span>
+                <h1>Somos una agencia de fundraising que crea <span class="italic-accent">conexiones con causa</span></h1>
                 <p class="lead" style="margin-top: 16px;">
-                    Lo que empezó como un grupo de amigos repartiendo libros en una vereda hoy es una organización con presencia en 9 países y más de 12.000 voluntarios.
+                    Acompañamos a organizaciones sociales, fundaciones y proyectos con propósito para que puedan comunicar mejor su causa, llegar a más personas y desarrollar campañas de captación sostenibles.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section section--cream">
+    <section class="about-highlight">
         <div class="container">
-            <div class="about-block">
-                <div class="about-block__visual" data-animate role="img" aria-label="Fundadores de econection en una jornada comunitaria">
-                    <!-- REEMPLAZA: style="background-image:url(/assets/img/about-story.jpg)" -->
+            <div class="about-highlight__grid">
+                <div class="about-highlight__media" data-animate aria-hidden="true">
+                    <svg class="about-highlight__brush" viewBox="0 0 300 160" fill="none">
+                        <path d="M18 112C67 26 183 14 280 52C218 81 167 124 90 135C58 140 34 131 18 112Z" fill="#8CCB2A" opacity=".22"/>
+                    </svg>
+                    <div class="about-highlight__heart">
+                        <svg viewBox="0 0 520 500">
+                            <defs>
+                                <linearGradient id="aboutHeartBrand" x1="70" y1="60" x2="440" y2="440" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#1BA7D7"/>
+                                    <stop offset=".52" stop-color="#0C63C9"/>
+                                    <stop offset="1" stop-color="#59B52E"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M260 448C120 326 50 252 50 158C50 86 104 42 168 42C208 42 239 62 260 96C281 62 312 42 352 42C416 42 470 86 470 158C470 252 400 326 260 448Z" fill="url(#aboutHeartBrand)"/>
+                            <path d="M148 260C207 312 312 312 372 260" stroke="rgba(255,255,255,.34)" stroke-width="18" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="about-highlight__years"><strong>F2F</strong><span>campo humano</span></div>
+                    <div class="about-highlight__chip">360</div>
                 </div>
-                <div class="about-block__content" data-animate data-animate-delay="1">
-                    <span class="eyebrow">Cómo empezamos</span>
-                    <h2>De un proyecto pequeño a una <span class="italic-accent">red regional</span>.</h2>
-                    <p class="lead">
-                        En 2014, un grupo de seis personas decidió que ya no podían seguir esperando a que alguien hiciera algo. Empezaron por una biblioteca de barrio, luego un huerto, luego una jornada de reforestación.
+
+                <div class="about-highlight__content" data-animate data-animate-delay="1">
+                    <span class="about-highlight__eyebrow">Nuestro propósito</span>
+                    <h2 class="about-highlight__title">Las grandes causas crecen cuando encuentran a las personas correctas</h2>
+                    <p class="about-highlight__lead">
+                        Nacimos para crear conexiones con sentido: entre organizaciones que trabajan por un mundo mejor y personas que quieren formar parte del cambio. Combinamos estrategia, trabajo en campo y formación de equipos para impulsar campañas sociales con impacto real.
                     </p>
-                    <p>
-                        Hoy, una década después, econection es una organización registrada que acompaña a más de 80 comunidades en 9 países, mantiene relaciones de largo plazo con aliados corporativos y forma anualmente a cientos de líderes locales. Pero seguimos creyendo en lo mismo: el cambio empieza por sentarse a escuchar.
-                    </p>
+                    <div class="about-highlight__mini">
+                        <div class="about-highlight__mini-text">
+                            <div class="about-highlight__mini-icon" aria-hidden="true">↗</div>
+                            <div>
+                                <h4>Conexiones con Causa</h4>
+                                <p>marketing social, fundraising y equipos</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight__avatars" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,73 +75,35 @@ include __DIR__ . '/includes/nav.php';
     <section class="section section--white">
         <div class="container">
             <div class="section-head">
-                <span class="eyebrow">Nuestros valores</span>
-                <h2>Lo que nos guía cuando <span class="italic-accent">nadie</span> está mirando.</h2>
+                <span class="eyebrow">Cómo entendemos el trabajo</span>
+                <h2>Una agencia seria, con enfoque humano y <span class="italic-accent">propósito social</span></h2>
             </div>
-
             <div class="values__grid">
-                <article class="value-card" data-animate>
-                    <span class="value-card__num">01 / Transparencia</span>
-                    <h3>Cuentas claras, siempre.</h3>
-                    <p>Publicamos reportes mensuales con cifras auditadas. Si algo no salió como planeamos, también lo contamos.</p>
-                </article>
-                <article class="value-card" data-animate data-animate-delay="1">
-                    <span class="value-card__num">02 / Escucha</span>
-                    <h3>Las comunidades primero.</h3>
-                    <p>Antes de proponer, preguntamos. Cada proyecto se diseña con quienes van a vivir sus resultados.</p>
-                </article>
-                <article class="value-card" data-animate data-animate-delay="2">
-                    <span class="value-card__num">03 / Constancia</span>
-                    <h3>No vamos de paso.</h3>
-                    <p>Nos quedamos. Acompañamos a las comunidades durante años, no semanas, hasta que el cambio se sostiene solo.</p>
-                </article>
-                <article class="value-card" data-animate>
-                    <span class="value-card__num">04 / Cuidado</span>
-                    <h3>Las personas no son métricas.</h3>
-                    <p>Cuidamos a quienes trabajan con y para nosotros. Sueldos justos, descansos reales, salud mental.</p>
-                </article>
-                <article class="value-card" data-animate data-animate-delay="1">
-                    <span class="value-card__num">05 / Curiosidad</span>
-                    <h3>Aprendemos en voz alta.</h3>
-                    <p>Compartimos lo que funciona y lo que no. Estamos abiertos a aliarnos con quien sume al objetivo.</p>
-                </article>
-                <article class="value-card" data-animate data-animate-delay="2">
-                    <span class="value-card__num">06 / Esperanza</span>
-                    <h3>Optimismo con los pies en la tierra.</h3>
-                    <p>Creemos que se puede. Y trabajamos para demostrarlo, dato por dato, comunidad por comunidad.</p>
-                </article>
+                <article class="value-card" data-animate><span class="value-card__num">01 / Estrategia</span><h3>Campañas con dirección.</h3><p>Partimos de objetivos claros, mensajes responsables y una ruta de captación viable.</p></article>
+                <article class="value-card" data-animate data-animate-delay="1"><span class="value-card__num">02 / Campo</span><h3>Conversaciones reales.</h3><p>Creemos en el face to face como un espacio de escucha, explicación y confianza.</p></article>
+                <article class="value-card" data-animate data-animate-delay="2"><span class="value-card__num">03 / Formación</span><h3>Embajadores preparados.</h3><p>Desarrollamos habilidades de comunicación, liderazgo y representación de causa.</p></article>
+                <article class="value-card" data-animate><span class="value-card__num">04 / Cuidado</span><h3>Personas antes que presión.</h3><p>Cuidamos la experiencia de donantes, organizaciones y equipos en campo.</p></article>
+                <article class="value-card" data-animate data-animate-delay="1"><span class="value-card__num">05 / Mejora</span><h3>Aprender para crecer.</h3><p>Medimos, escuchamos y ajustamos campañas para sostener mejores resultados.</p></article>
+                <article class="value-card" data-animate data-animate-delay="2"><span class="value-card__num">06 / Propósito</span><h3>Comunicar con respeto.</h3><p>Evitamos mensajes dramáticos y priorizamos claridad, dignidad y conexión humana.</p></article>
             </div>
         </div>
     </section>
 
-    <section class="section section--cream">
+    <section class="section benefits">
         <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Equipo</span>
-                <h2>Las personas detrás de <span class="italic-accent">econection</span>.</h2>
-            </div>
-
-            <div class="team__grid">
-                <article class="team-member" data-animate>
-                    <div class="team-member__photo" aria-hidden="true"></div>
-                    <h4>Camila Restrepo</h4>
-                    <p>Directora ejecutiva</p>
-                </article>
-                <article class="team-member" data-animate data-animate-delay="1">
-                    <div class="team-member__photo" aria-hidden="true"></div>
-                    <h4>Joaquín Vergara</h4>
-                    <p>Director de programas</p>
-                </article>
-                <article class="team-member" data-animate data-animate-delay="2">
-                    <div class="team-member__photo" aria-hidden="true"></div>
-                    <h4>Salomé Ríos</h4>
-                    <p>Coordinadora ambiental</p>
-                </article>
-                <article class="team-member" data-animate data-animate-delay="3">
-                    <div class="team-member__photo" aria-hidden="true"></div>
-                    <h4>Mateo Quintero</h4>
-                    <p>Alianzas estratégicas</p>
-                </article>
+            <div class="benefits__grid">
+                <div data-animate>
+                    <span class="eyebrow">Equipo ECONECTION</span>
+                    <h2>Formamos personas que representan causas con <span class="italic-accent">claridad</span></h2>
+                    <p class="lead" style="color: rgba(247, 249, 251, 0.78);">
+                        Nuestro equipo combina entrenamiento, acompañamiento y trabajo en campo para que cada campaña sea profesional, humana y consistente.
+                    </p>
+                </div>
+                <ul class="benefits__list">
+                    <li class="benefit-item"><div class="benefit-item__icon">✓</div><div><h4>Comunicación directa</h4><p>Conversaciones claras, respetuosas y orientadas a construir confianza.</p></div></li>
+                    <li class="benefit-item"><div class="benefit-item__icon">✓</div><div><h4>Liderazgo y crecimiento humano</h4><p>Equipos que aprenden, se acompañan y desarrollan habilidades profesionales.</p></div></li>
+                    <li class="benefit-item"><div class="benefit-item__icon">✓</div><div><h4>Representación profesional</h4><p>Cada embajador entiende la causa, el contexto y la responsabilidad de comunicarla.</p></div></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -123,12 +112,12 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="cta-final__inner" data-animate>
                 <div class="cta-final__content">
-                    <span class="eyebrow" style="color: var(--color-primary);">Te invitamos</span>
-                    <h2>¿Quieres trabajar con <span class="italic-accent">nosotros</span>?</h2>
-                    <p>Buscamos personas curiosas, comprometidas y con ganas de hacer. Escríbenos contándonos quién eres.</p>
+                    <span class="eyebrow" style="color: var(--color-primary);">Conversemos</span>
+                    <h2>Tu causa puede llegar a más <span class="italic-accent">personas</span></h2>
+                    <p>Hablemos de estrategia, equipos y campañas para tu organización.</p>
                     <div class="cta-final__ctas">
-                        <a href="/contact.php" class="btn btn--primary">Postula tu CV<span class="btn__arrow" aria-hidden="true">→</span></a>
-                        <a href="/projects.php" class="btn btn--light">Ver lo que hacemos</a>
+                        <a href="/contact.php" class="btn btn--primary">Hablemos de tu campaña<span class="btn__arrow" aria-hidden="true">→</span></a>
+                        <a href="/services.php" class="btn btn--light">Ver servicios</a>
                     </div>
                 </div>
             </div>

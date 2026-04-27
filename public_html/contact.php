@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Contacto — econection';
-$page_description = 'Escríbenos. Estamos para resolver dudas, recibir propuestas y conectar con quien quiera sumarse a una causa que importa.';
+$page_title       = 'Contacto — ECONECTION';
+$page_description = 'Contacta a ECONECTION para impulsar una campaña social o unirte al equipo de embajadores.';
 $current_page     = 'contact';
 
 // Mantiene los valores escritos si el formulario fue rechazado por validación
@@ -24,15 +24,15 @@ include __DIR__ . '/includes/nav.php';
                     <span>Contacto</span>
                 </nav>
                 <span class="eyebrow">Hablemos</span>
-                <h1>Cuéntanos qué te trae aquí. Te <span class="italic-accent">respondemos</span> en 48 horas.</h1>
+                <h1>Cuéntanos si quieres impulsar una campaña o <span class="italic-accent">unirte al equipo</span></h1>
                 <p class="lead" style="margin-top: 16px;">
-                    Sin formularios eternos ni respuestas automáticas. Una persona del equipo te lee y te escribe de vuelta.
+                    Una persona del equipo revisará tu mensaje para orientar la conversación según tu tipo de interés.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section section--cream">
+    <section class="section section--cream" id="equipo">
         <div class="container">
             <div class="contact-layout">
 
@@ -42,16 +42,16 @@ include __DIR__ . '/includes/nav.php';
                         <p><a href="mailto:hola@econection.org">hola@econection.org</a></p>
                     </div>
                     <div class="contact-info__card">
-                        <h4>Llámanos</h4>
-                        <p><a href="tel:+5715550142">+57 (1) 555 0142</a></p>
+                        <h4>Reuniones</h4>
+                        <p>Agenda una conversación con el equipo</p>
                     </div>
                     <div class="contact-info__card">
-                        <h4>Visítanos</h4>
-                        <p>Calle 93 # 11-23<br>Bogotá, Colombia</p>
+                        <h4>Modalidad</h4>
+                        <p>Campañas, equipos y trabajo en campo</p>
                     </div>
                     <div class="contact-info__card">
-                        <h4>Aliados corporativos</h4>
-                        <p><a href="mailto:aliados@econection.org">aliados@econection.org</a></p>
+                        <h4>Campañas y organizaciones</h4>
+                        <p><a href="mailto:campanas@econection.org">campanas@econection.org</a></p>
                     </div>
                 </aside>
 
@@ -86,17 +86,13 @@ include __DIR__ . '/includes/nav.php';
                         </div>
 
                         <div class="form-field">
-                            <label for="reason">¿En qué te ayudamos? *</label>
+                            <label for="reason">Tipo de interés *</label>
                             <select id="reason" name="reason" required>
                                 <?php
                                 $reasons = [
-                                    ''                      => 'Selecciona una opción',
-                                    'voluntariado'          => 'Quiero ser voluntario/a',
-                                    'donacion'              => 'Quiero donar o apadrinar',
-                                    'aliado-corporativo'    => 'Quiero ser aliado corporativo',
-                                    'proponer-proyecto'     => 'Quiero proponer un proyecto',
-                                    'prensa'                => 'Soy de medios / prensa',
-                                    'otro'                  => 'Otra cosa',
+                                    ''                     => 'Selecciona una opción',
+                                    'organizacion-campana' => 'Soy una organización y quiero impulsar una campaña',
+                                    'unirme-equipo'        => 'Quiero unirme al equipo',
                                 ];
                                 $sel = $old['reason'] ?? '';
                                 foreach ($reasons as $val => $label) {
@@ -105,6 +101,9 @@ include __DIR__ . '/includes/nav.php';
                                 }
                                 ?>
                             </select>
+                            <?php if (!empty($errors['reason'])): ?>
+                                <p class="form-error"><?php echo htmlspecialchars($errors['reason']); ?></p>
+                            <?php endif; ?>
                         </div>
 
                         <div class="form-field form-field--full <?php echo isset($errors['message']) ? 'form-field--error' : ''; ?>">

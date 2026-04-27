@@ -59,6 +59,11 @@ if ($email === '') {
     $errors['email'] = 'Ese correo no parece válido. Revisa la escritura.';
 }
 
+$allowed_reasons = ['organizacion-campana', 'unirme-equipo'];
+if (!in_array($reason, $allowed_reasons, true)) {
+    $errors['reason'] = 'Selecciona el tipo de interés.';
+}
+
 if ($message === '') {
     $errors['message'] = 'Cuéntanos un poco más, aunque sea breve.';
 } elseif (mb_strlen($message) < 10) {
@@ -83,12 +88,8 @@ if (!empty($errors)) {
 
 // 6. Construir el correo
 $reasons_human = [
-    'voluntariado'        => 'Quiero ser voluntario/a',
-    'donacion'            => 'Quiero donar o apadrinar',
-    'aliado-corporativo'  => 'Quiero ser aliado corporativo',
-    'proponer-proyecto'   => 'Quiero proponer un proyecto',
-    'prensa'              => 'Soy de medios / prensa',
-    'otro'                => 'Otra cosa',
+    'organizacion-campana' => 'Soy una organización y quiero impulsar una campaña',
+    'unirme-equipo'        => 'Quiero unirme al equipo',
 ];
 $reason_label = $reasons_human[$reason] ?? 'No especificado';
 

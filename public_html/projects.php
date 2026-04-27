@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Proyectos — econection';
-$page_description = 'Conoce los proyectos activos de econection en Colombia, Ecuador, Perú, Chile y otros países de Latinoamérica.';
+$page_title       = 'Causas — ECONECTION';
+$page_description = 'Áreas de impacto donde ECONECTION puede acompañar campañas de fundraising, captación y comunicación social.';
 $current_page     = 'projects';
 include __DIR__ . '/includes/header.php';
 include __DIR__ . '/includes/nav.php';
@@ -14,84 +14,61 @@ include __DIR__ . '/includes/nav.php';
                 <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
                     <a href="/index.php">Inicio</a>
                     <span aria-hidden="true">/</span>
-                    <span>Proyectos</span>
+                    <span>Causas</span>
                 </nav>
-                <span class="eyebrow">Lo que está pasando ahora</span>
-                <h1>Proyectos vivos en <span class="italic-accent">9 países</span> de la región.</h1>
+                <span class="eyebrow">Causas</span>
+                <h1>Causas donde podemos acompañar campañas de <span class="italic-accent">captación</span></h1>
                 <p class="lead" style="margin-top: 16px;">
-                    Cada uno nació de una conversación con la comunidad. Cada uno tiene un equipo local liderándolo. Cada uno publica resultados reales mes a mes.
+                    Trabajamos como aliado estratégico de organizaciones sociales, fundaciones y proyectos con propósito para activar campañas de captación y comunicación directa.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section section--cream">
+    <section class="section section--white">
         <div class="container">
             <div class="project-archive">
-
-                <a class="project-archive__item" href="#" data-animate>
-                    <div class="project-archive__media" role="img" aria-label="Sembrando la cuenca del río Otún"></div>
-                    <span class="project-archive__tag">Ambiente</span>
-                    <h3 class="project-archive__title">Sembrando la cuenca del río Otún</h3>
-                    <p class="project-archive__meta">Risaralda, Colombia · En curso</p>
+                <a class="project-archive__item" href="/contact.php" data-animate>
+                    <div class="project-archive__media" role="img" aria-label="Infancia y adolescencia"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Infancia y adolescencia</h3>
+                    <p class="project-archive__meta">Campañas para proteger, educar y acompañar a nuevas generaciones.</p>
                 </a>
 
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="1">
-                    <div class="project-archive__media" role="img" aria-label="Bibliotecas vivas en Quito"></div>
-                    <span class="project-archive__tag">Educación</span>
-                    <h3 class="project-archive__title">Bibliotecas vivas</h3>
-                    <p class="project-archive__meta">Quito, Ecuador · En curso</p>
+                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="1">
+                    <div class="project-archive__media" role="img" aria-label="Medio ambiente"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Medio ambiente</h3>
+                    <p class="project-archive__meta">Captación para proyectos de conservación y sostenibilidad.</p>
                 </a>
 
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="2">
-                    <div class="project-archive__media" role="img" aria-label="Mujeres que tejen futuro"></div>
-                    <span class="project-archive__tag">Comunidades</span>
-                    <h3 class="project-archive__title">Mujeres que tejen futuro</h3>
-                    <p class="project-archive__meta">Cusco, Perú · En curso</p>
+                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="2">
+                    <div class="project-archive__media" role="img" aria-label="Salud y bienestar"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Salud y bienestar</h3>
+                    <p class="project-archive__meta">Comunicación para programas de cuidado, prevención y acceso.</p>
                 </a>
 
-                <a class="project-archive__item" href="#" data-animate>
-                    <div class="project-archive__media" role="img" aria-label="Brigadas urbanas de invierno"></div>
-                    <span class="project-archive__tag">Voluntariado</span>
-                    <h3 class="project-archive__title">Brigadas urbanas de invierno</h3>
-                    <p class="project-archive__meta">Santiago, Chile · Anual</p>
+                <a class="project-archive__item" href="/contact.php" data-animate>
+                    <div class="project-archive__media" role="img" aria-label="Desarrollo comunitario"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Desarrollo comunitario</h3>
+                    <p class="project-archive__meta">Movilización de apoyo para iniciativas locales y territoriales.</p>
                 </a>
 
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="1">
-                    <div class="project-archive__media" role="img" aria-label="Huertos urbanos de Soacha"></div>
-                    <span class="project-archive__tag">Comunidades</span>
-                    <h3 class="project-archive__title">Huertos urbanos de Soacha</h3>
-                    <p class="project-archive__meta">Cundinamarca, Colombia · En curso</p>
+                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="1">
+                    <div class="project-archive__media" role="img" aria-label="Educación"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Educación</h3>
+                    <p class="project-archive__meta">Campañas para programas de acceso, permanencia y aprendizaje.</p>
                 </a>
 
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="2">
-                    <div class="project-archive__media" role="img" aria-label="Aula móvil del Pacífico"></div>
-                    <span class="project-archive__tag">Educación</span>
-                    <h3 class="project-archive__title">Aula móvil del Pacífico</h3>
-                    <p class="project-archive__meta">Chocó, Colombia · En curso</p>
+                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="2">
+                    <div class="project-archive__media" role="img" aria-label="Cultura y comunidad"></div>
+                    <span class="project-archive__tag">Impacto</span>
+                    <h3 class="project-archive__title">Cultura y comunidad</h3>
+                    <p class="project-archive__meta">Comunicación para iniciativas que fortalecen tejido social.</p>
                 </a>
-
-                <a class="project-archive__item" href="#" data-animate>
-                    <div class="project-archive__media" role="img" aria-label="Reserva nativa Yasuní"></div>
-                    <span class="project-archive__tag">Ambiente</span>
-                    <h3 class="project-archive__title">Reserva nativa Yasuní</h3>
-                    <p class="project-archive__meta">Orellana, Ecuador · En curso</p>
-                </a>
-
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="1">
-                    <div class="project-archive__media" role="img" aria-label="Becas Raíz para jóvenes rurales"></div>
-                    <span class="project-archive__tag">Educación</span>
-                    <h3 class="project-archive__title">Becas Raíz para jóvenes rurales</h3>
-                    <p class="project-archive__meta">Regional · Convocatoria abierta</p>
-                </a>
-
-                <a class="project-archive__item" href="#" data-animate data-animate-delay="2">
-                    <div class="project-archive__media" role="img" aria-label="Voluntariado corporativo Gruposol"></div>
-                    <span class="project-archive__tag">Voluntariado</span>
-                    <h3 class="project-archive__title">Voluntariado corporativo Gruposol</h3>
-                    <p class="project-archive__meta">Multipaís · Tercer año</p>
-                </a>
-
             </div>
         </div>
     </section>
@@ -100,12 +77,12 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="cta-final__inner" data-animate>
                 <div class="cta-final__content">
-                    <span class="eyebrow" style="color: var(--color-primary);">¿Tienes un proyecto?</span>
-                    <h2>Si conoces una causa que merece <span class="italic-accent">apoyo</span>, queremos saberlo.</h2>
-                    <p>Recibimos propuestas de líderes comunitarios y organizaciones locales todo el año.</p>
+                    <span class="eyebrow" style="color: var(--color-primary);">Para organizaciones</span>
+                    <h2>Diseñemos una campaña para tu <span class="italic-accent">causa</span></h2>
+                    <p>Cuéntanos qué necesita tu organización y revisamos cómo podemos acompañarte.</p>
                     <div class="cta-final__ctas">
-                        <a href="/contact.php" class="btn btn--primary">Proponer un proyecto<span class="btn__arrow" aria-hidden="true">→</span></a>
-                        <a href="/services.php" class="btn btn--light">Ver nuestros programas</a>
+                        <a href="/contact.php" class="btn btn--primary">Hablemos de tu campaña<span class="btn__arrow" aria-hidden="true">→</span></a>
+                        <a href="/services.php" class="btn btn--light">Ver servicios</a>
                     </div>
                 </div>
             </div>

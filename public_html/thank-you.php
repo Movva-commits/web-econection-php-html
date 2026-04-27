@@ -1,6 +1,6 @@
 <?php
-$page_title       = '¡Gracias! — econection';
-$page_description = 'Hemos recibido tu mensaje. Te responderemos en menos de 48 horas.';
+$page_title       = 'Gracias — ECONECTION';
+$page_description = 'Hemos recibido tu mensaje. El equipo de ECONECTION te responderá pronto.';
 $current_page     = '';
 include __DIR__ . '/includes/header.php';
 include __DIR__ . '/includes/nav.php';
@@ -15,10 +15,10 @@ include __DIR__ . '/includes/nav.php';
             <span class="eyebrow">Mensaje recibido</span>
             <h1>¡Gracias por <span class="italic-accent">escribirnos</span>!</h1>
             <p>
-                Una persona del equipo está leyendo tu mensaje y te responderá en menos de 48 horas hábiles. Mientras tanto, te invitamos a conocer lo que estamos haciendo.
+                Una persona del equipo está leyendo tu mensaje y te responderá pronto. Mientras tanto, puedes revisar nuestros servicios de fundraising y marketing social.
             </p>
             <div class="thank-you__ctas">
-                <a href="/projects.php" class="btn btn--primary">Ver proyectos<span class="btn__arrow" aria-hidden="true">→</span></a>
+                <a href="/services.php" class="btn btn--primary">Ver servicios<span class="btn__arrow" aria-hidden="true">→</span></a>
                 <a href="/index.php" class="btn btn--ghost">Volver al inicio</a>
             </div>
         </div>

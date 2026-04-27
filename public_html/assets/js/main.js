@@ -170,4 +170,147 @@
         });
     });
 
+    /* 7. SERVICES CAROUSEL -------------------------------------------- */
+    document.querySelectorAll('[data-services-carousel]').forEach(carousel => {
+        const viewport = carousel.querySelector('.services-carousel__viewport');
+        const track = carousel.querySelector('.services-carousel__track');
+        const prevBtn = carousel.querySelector('.services-carousel__arrow--prev');
+        const nextBtn = carousel.querySelector('.services-carousel__arrow--next');
+        const dotsWrap = carousel.querySelector('.services-carousel__dots');
+        if (!viewport || !track || !prevBtn || !nextBtn || !dotsWrap) return;
+
+        const originals = Array.from(track.children);
+        if (originals.length < 2) return;
+
+        const firstClone = originals[0].cloneNode(true);
+        const lastClone = originals[originals.length - 1].cloneNode(true);
+        firstClone.setAttribute('aria-hidden', 'true');
+        lastClone.setAttribute('aria-hidden', 'true');
+        firstClone.querySelectorAll('a, button').forEach(el => el.setAttribute('tabindex', '-1'));
+        lastClone.querySelectorAll('a, button').forEach(el => el.setAttribute('tabindex', '-1'));
+        firstClone.classList.add('is-clone');
+        lastClone.classList.add('is-clone');
+        track.insertBefore(lastClone, originals[0]);
+        track.appendChild(firstClone);
+
+        let slides = Array.from(track.children);
+        let index = 1;
+        let isAnimating = false;
+        let startX = 0;
+        let currentX = 0;
+        let dragOffset = 0;
+        let isDragging = false;
+        let hasDragged = false;
+
+        const dots = originals.map((_, dotIndex) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'services-carousel__dot';
+            dot.setAttribute('aria-label', `Ir al servicio ${dotIndex + 1}`);
+            dot.addEventListener('click', () => goTo(dotIndex + 1));
+            dotsWrap.appendChild(dot);
+            return dot;
+        });
+
+        const realIndex = () => {
+            if (index === 0) return originals.length - 1;
+            if (index === slides.length - 1) return 0;
+            return index - 1;
+        };
+
+        const getOffset = (slideIndex) => {
+            const slide = slides[slideIndex];
+            return slide.offsetLeft - ((viewport.clientWidth - slide.offsetWidth) / 2);
+        };
+
+        const setActive = () => {
+            const activeReal = realIndex();
+            slides.forEach((slide, slideIndex) => {
+                slide.classList.toggle('is-active', slideIndex === index);
+            });
+            dots.forEach((dot, dotIndex) => {
+                dot.classList.toggle('is-active', dotIndex === activeReal);
+                dot.setAttribute('aria-current', dotIndex === activeReal ? 'true' : 'false');
+            });
+        };
+
+        const update = (withTransition = true, extraOffset = 0) => {
+            carousel.classList.toggle('is-jump', !withTransition);
+            track.style.transform = `translateX(${-(getOffset(index) - extraOffset)}px)`;
+            setActive();
+            if (!withTransition) {
+                requestAnimationFrame(() => carousel.classList.remove('is-jump'));
+            }
+        };
+
+        const goTo = (nextIndex) => {
+            if (isAnimating) return;
+            index = nextIndex;
+            isAnimating = true;
+            update(true);
+        };
+
+        const next = () => goTo(index + 1);
+        const prev = () => goTo(index - 1);
+
+        track.addEventListener('transitionend', () => {
+            isAnimating = false;
+            if (index === 0) {
+                index = originals.length;
+                update(false);
+            } else if (index === slides.length - 1) {
+                index = 1;
+                update(false);
+            }
+        });
+
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', prev);
+
+        viewport.addEventListener('pointerdown', (e) => {
+            if (e.pointerType === 'mouse' && e.button !== 0) return;
+            isDragging = true;
+            startX = e.clientX;
+            currentX = startX;
+            dragOffset = 0;
+            carousel.classList.add('is-dragging');
+            hasDragged = false;
+            viewport.setPointerCapture(e.pointerId);
+        });
+
+        viewport.addEventListener('pointermove', (e) => {
+            if (!isDragging) return;
+            currentX = e.clientX;
+            dragOffset = currentX - startX;
+            if (Math.abs(dragOffset) > 8) hasDragged = true;
+            update(false, dragOffset);
+        });
+
+        const endDrag = (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            carousel.classList.remove('is-dragging');
+            if (viewport.hasPointerCapture(e.pointerId)) viewport.releasePointerCapture(e.pointerId);
+
+            const threshold = Math.min(90, viewport.clientWidth * 0.16);
+            if (dragOffset < -threshold) next();
+            else if (dragOffset > threshold) prev();
+            else update(true);
+            dragOffset = 0;
+            window.setTimeout(() => { hasDragged = false; }, 0);
+        };
+
+        viewport.addEventListener('pointerup', endDrag);
+        viewport.addEventListener('pointercancel', endDrag);
+        carousel.addEventListener('click', (e) => {
+            if (!hasDragged) return;
+            e.preventDefault();
+            e.stopPropagation();
+        }, true);
+
+        window.addEventListener('resize', () => update(false), { passive: true });
+
+        requestAnimationFrame(() => update(false));
+    });
+
 })();

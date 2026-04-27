@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Programas — econection';
-$page_description = 'Descubre los programas de econection: educación, restauración ambiental, fortalecimiento comunitario y voluntariado activo.';
+$page_title       = 'Servicios — ECONECTION';
+$page_description = 'Servicios de fundraising face to face, embajadores sociales, campañas para organizaciones y crecimiento de equipos.';
 $current_page     = 'services';
 include __DIR__ . '/includes/header.php';
 include __DIR__ . '/includes/nav.php';
@@ -14,12 +14,12 @@ include __DIR__ . '/includes/nav.php';
                 <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
                     <a href="/index.php">Inicio</a>
                     <span aria-hidden="true">/</span>
-                    <span>Programas</span>
+                    <span>Servicios</span>
                 </nav>
-                <span class="eyebrow">Lo que hacemos</span>
-                <h1>Cuatro programas, un solo <span class="italic-accent">propósito</span>.</h1>
+                <span class="eyebrow">Qué hacemos</span>
+                <h1>Fundraising y marketing social para organizaciones con <span class="italic-accent">propósito</span></h1>
                 <p class="lead" style="margin-top: 16px;">
-                    Cada programa nació de una necesidad real escuchada en territorio. Todos comparten la misma metodología: escuchar, co-diseñar, ejecutar y medir.
+                    Diseñamos, activamos y optimizamos campañas de captación para que las causas puedan conectar con personas, construir apoyo y crecer de forma sostenible.
                 </p>
             </div>
         </div>
@@ -27,75 +27,65 @@ include __DIR__ . '/includes/nav.php';
 
     <section class="section section--white">
         <div class="container">
-
-            <article class="service-row" id="educacion" data-animate>
-                <div class="service-row__visual" role="img" aria-label="Niñas y niños en biblioteca comunitaria"></div>
+            <article class="service-row" id="fundraising" data-animate>
+                <div class="service-row__visual" role="img" aria-label="Fundraising face to face"></div>
                 <div class="service-row__content">
-                    <span class="eyebrow">Programa 01</span>
-                    <h2>Educación que <span class="italic-accent">transforma</span>.</h2>
-                    <p class="lead">
-                        Bibliotecas comunitarias, becas escolares y mentorías para niñas, niños y jóvenes en zonas con bajo acceso a recursos educativos.
-                    </p>
+                    <span class="eyebrow">Servicio 01</span>
+                    <h2>Fundraising <span class="italic-accent">face to face</span></h2>
+                    <p class="lead">Activamos campañas presenciales para explicar causas, resolver dudas y convertir conversaciones en apoyo.</p>
                     <ul class="service-row__features">
-                        <li>34 bibliotecas vivas funcionando hoy en zonas rurales y periurbanas.</li>
-                        <li>Becas escolares completas para 480 estudiantes cada año.</li>
-                        <li>Programa de mentoría 1 a 1 con voluntarios profesionales.</li>
-                        <li>Talleres de lectura, escritura creativa y pensamiento crítico.</li>
+                        <li>Diseño de discurso y ruta de conversación.</li>
+                        <li>Captación directa en puntos estratégicos.</li>
+                        <li>Representación profesional de la organización.</li>
+                        <li>Seguimiento de aprendizajes del trabajo en campo.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="service-row service-row--reverse" id="ambiente" data-animate>
-                <div class="service-row__visual" role="img" aria-label="Jornada de reforestación con voluntarios"></div>
+            <article class="service-row service-row--reverse" id="embajadores" data-animate>
+                <div class="service-row__visual" role="img" aria-label="Embajadores sociales"></div>
                 <div class="service-row__content">
-                    <span class="eyebrow">Programa 02</span>
-                    <h2>Restauración <span class="italic-accent">ambiental</span>.</h2>
-                    <p class="lead">
-                        Reforestación con especies nativas, protección de cuencas hídricas y educación ambiental con escuelas y comunidades locales.
-                    </p>
+                    <span class="eyebrow">Servicio 02</span>
+                    <h2>Formación de <span class="italic-accent">embajadores sociales</span></h2>
+                    <p class="lead">Preparamos equipos para comunicar con empatía, claridad, seguridad y respeto por cada causa.</p>
                     <ul class="service-row__features">
-                        <li>Más de 142.000 árboles sembrados desde 2018, con seguimiento individual.</li>
-                        <li>9 cuencas hídricas con planes activos de protección.</li>
-                        <li>Currículo ambiental aplicado en 56 escuelas rurales.</li>
-                        <li>Brigadas trimestrales abiertas a voluntarios de toda la región.</li>
+                        <li>Entrenamiento en comunicación directa y escucha activa.</li>
+                        <li>Formación en propósito, objeciones y representación.</li>
+                        <li>Acompañamiento de líderes en campo.</li>
+                        <li>Cultura de equipo orientada al crecimiento humano.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="service-row" id="comunidades" data-animate>
-                <div class="service-row__visual" role="img" aria-label="Mujeres líderes en taller comunitario"></div>
+            <article class="service-row" id="campanas" data-animate>
+                <div class="service-row__visual" role="img" aria-label="Campañas para organizaciones sociales"></div>
                 <div class="service-row__content">
-                    <span class="eyebrow">Programa 03</span>
-                    <h2>Comunidades <span class="italic-accent">fuertes</span>.</h2>
-                    <p class="lead">
-                        Formamos a líderes barriales con herramientas, recursos y acompañamiento para que sostengan el cambio cuando ya no estamos.
-                    </p>
+                    <span class="eyebrow">Servicio 03</span>
+                    <h2>Campañas para <span class="italic-accent">organizaciones</span></h2>
+                    <p class="lead">Acompañamos la planificación de campañas sociales desde el mensaje hasta la activación.</p>
                     <ul class="service-row__features">
-                        <li>Programa de liderazgo de 9 meses, certificado y gratuito.</li>
-                        <li>Capital semilla para emprendimientos comunitarios viables.</li>
-                        <li>Red activa de más de 320 lideresas y líderes egresados.</li>
-                        <li>Mentoría continua después de graduarse del programa.</li>
+                        <li>Definición de objetivos, públicos y propuesta de valor.</li>
+                        <li>Comunicación de causa con tono claro y responsable.</li>
+                        <li>Materiales base para equipos y puntos de captación.</li>
+                        <li>Coordinación con fundaciones y proyectos aliados.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="service-row service-row--reverse" id="voluntariado" data-animate>
-                <div class="service-row__visual" role="img" aria-label="Voluntarios sonriendo en una jornada"></div>
+            <article class="service-row service-row--reverse" id="equipos" data-animate>
+                <div class="service-row__visual" role="img" aria-label="Crecimiento de equipos de recaudación"></div>
                 <div class="service-row__content">
-                    <span class="eyebrow">Programa 04</span>
-                    <h2>Voluntariado <span class="italic-accent">activo</span>.</h2>
-                    <p class="lead">
-                        Programas presenciales y remotos para que tu tiempo y tus talentos lleguen a donde generan más impacto. Desde 2 horas a la semana.
-                    </p>
+                    <span class="eyebrow">Servicio 04</span>
+                    <h2>Crecimiento de <span class="italic-accent">equipos</span></h2>
+                    <p class="lead">Estructuramos procesos para que los equipos de captación puedan sostener calidad, motivación y resultados.</p>
                     <ul class="service-row__features">
-                        <li>Voluntariado remoto en mentoría, diseño, traducción, datos y más.</li>
-                        <li>Brigadas presenciales mensuales en los 9 países donde operamos.</li>
-                        <li>Voluntariado corporativo a la medida para empresas de cualquier tamaño.</li>
-                        <li>Certificación oficial de horas y áreas para tu hoja de vida.</li>
+                        <li>Roles, liderazgo y acompañamiento diario.</li>
+                        <li>Rutinas de seguimiento y mejora de desempeño.</li>
+                        <li>Lectura de indicadores sin perder el enfoque humano.</li>
+                        <li>Escalamiento progresivo según capacidad de campaña.</li>
                     </ul>
                 </div>
             </article>
-
         </div>
     </section>
 
@@ -103,12 +93,12 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="cta-final__inner" data-animate>
                 <div class="cta-final__content">
-                    <span class="eyebrow" style="color: var(--color-primary);">¿Cuál te llama?</span>
-                    <h2>Hay un programa esperando <span class="italic-accent">por ti</span>.</h2>
-                    <p>Cuéntanos qué te mueve y te ayudamos a encontrar la mejor manera de sumarte.</p>
+                    <span class="eyebrow" style="color: var(--color-primary);">Para organizaciones</span>
+                    <h2>Diseñemos una campaña para tu <span class="italic-accent">causa</span></h2>
+                    <p>Cuéntanos qué necesita tu organización y revisamos cómo podemos acompañarte.</p>
                     <div class="cta-final__ctas">
-                        <a href="/contact.php" class="btn btn--primary">Hablemos<span class="btn__arrow" aria-hidden="true">→</span></a>
-                        <a href="/projects.php" class="btn btn--light">Ver proyectos en marcha</a>
+                        <a href="/contact.php" class="btn btn--primary">Hablemos de tu campaña<span class="btn__arrow" aria-hidden="true">→</span></a>
+                        <a href="/projects.php" class="btn btn--light">Ver áreas de impacto</a>
                     </div>
                 </div>
             </div>
