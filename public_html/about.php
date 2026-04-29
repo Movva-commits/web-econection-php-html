@@ -25,49 +25,65 @@ include __DIR__ . '/includes/nav.php';
         </div>
     </section>
 
-    <section class="about-highlight">
+    <section class="section at-section">
         <div class="container">
-            <div class="about-highlight__grid">
-                <div class="about-highlight__media" data-animate aria-hidden="true">
-                    <svg class="about-highlight__brush" viewBox="0 0 300 160" fill="none">
-                        <path d="M18 112C67 26 183 14 280 52C218 81 167 124 90 135C58 140 34 131 18 112Z" fill="#8CCB2A" opacity=".22"/>
-                    </svg>
-                    <div class="about-highlight__heart">
-                        <svg viewBox="0 0 520 500">
-                            <defs>
-                                <linearGradient id="aboutHeartBrand" x1="70" y1="60" x2="440" y2="440" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#1BA7D7"/>
-                                    <stop offset=".52" stop-color="#0C63C9"/>
-                                    <stop offset="1" stop-color="#59B52E"/>
-                                </linearGradient>
-                            </defs>
-                            <path d="M260 448C120 326 50 252 50 158C50 86 104 42 168 42C208 42 239 62 260 96C281 62 312 42 352 42C416 42 470 86 470 158C470 252 400 326 260 448Z" fill="url(#aboutHeartBrand)"/>
-                            <path d="M148 260C207 312 312 312 372 260" stroke="rgba(255,255,255,.34)" stroke-width="18" stroke-linecap="round"/>
-                        </svg>
+            <div class="animated-test" data-animated-test>
+
+                <div class="animated-test__media" aria-hidden="true">
+                    <div class="animated-test__stack">
+                        <div class="animated-test__img" data-at-img="0">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=600&auto=format&fit=crop" alt="">
+                        </div>
+                        <div class="animated-test__img" data-at-img="1">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop" alt="">
+                        </div>
+                        <div class="animated-test__img" data-at-img="2">
+                            <img src="https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=600&auto=format&fit=crop" alt="">
+                        </div>
+                        <div class="animated-test__img" data-at-img="3">
+                            <img src="https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=600&auto=format&fit=crop" alt="">
+                        </div>
+                        <div class="animated-test__img" data-at-img="4">
+                            <img src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=600&auto=format&fit=crop" alt="">
+                        </div>
                     </div>
-                    <div class="about-highlight__years"><strong>F2F</strong><span>campo humano</span></div>
-                    <div class="about-highlight__chip">360</div>
                 </div>
 
-                <div class="about-highlight__content" data-animate data-animate-delay="1">
-                    <span class="about-highlight__eyebrow">Nuestro propósito</span>
-                    <h2 class="about-highlight__title">Las grandes causas crecen cuando encuentran a las personas correctas</h2>
-                    <p class="about-highlight__lead">
-                        Nacimos para crear conexiones con sentido: entre organizaciones que trabajan por un mundo mejor y personas que quieren formar parte del cambio. Combinamos estrategia, trabajo en campo y formación de equipos para impulsar campañas sociales con impacto real.
-                    </p>
-                    <div class="about-highlight__mini">
-                        <div class="about-highlight__mini-text">
-                            <div class="about-highlight__mini-icon" aria-hidden="true">↗</div>
-                            <div>
-                                <h4>Conexiones con Causa</h4>
-                                <p>marketing social, fundraising y equipos</p>
-                            </div>
+                <div class="animated-test__body">
+                    <div class="animated-test__quotes" data-at-quotes>
+                        <div class="animated-test__slide" data-at-slide="0"
+                             data-name="Sarah Chen"
+                             data-role="Product Manager at TechFlow"
+                             data-quote="The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.">
                         </div>
-                        <div class="about-highlight__avatars" aria-hidden="true">
-                            <span></span><span></span><span></span><span></span><span></span>
+                        <div class="animated-test__slide" data-at-slide="1"
+                             data-name="Michael Rodriguez"
+                             data-role="CTO at InnovateSphere"
+                             data-quote="Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.">
+                        </div>
+                        <div class="animated-test__slide" data-at-slide="2"
+                             data-name="Emily Watson"
+                             data-role="Operations Director at CloudScale"
+                             data-quote="This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.">
+                        </div>
+                        <div class="animated-test__slide" data-at-slide="3"
+                             data-name="James Kim"
+                             data-role="Engineering Lead at DataPro"
+                             data-quote="Outstanding support and robust features. It's rare to find a product that delivers on all its promises.">
+                        </div>
+                        <div class="animated-test__slide" data-at-slide="4"
+                             data-name="Lisa Thompson"
+                             data-role="VP of Technology at FutureNet"
+                             data-quote="The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.">
                         </div>
                     </div>
+
+                    <div class="animated-test__controls">
+                        <button class="animated-test__btn" data-at-prev aria-label="Anterior">&#8592;</button>
+                        <button class="animated-test__btn" data-at-next aria-label="Siguiente">&#8594;</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>

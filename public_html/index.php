@@ -252,48 +252,42 @@ include __DIR__ . '/includes/nav.php';
         </div>
     </section>
 
-    <section class="section section--white">
+    <section class="section section--white sticky-causes-section">
         <div class="container">
             <div class="section-head section-head--left" style="text-align: left; max-width: 760px; margin: 0 0 56px;">
                 <span class="eyebrow">Causas que impulsamos</span>
                 <h2>Áreas de impacto donde podemos acompañar <span class="italic-accent">campañas</span></h2>
                 <p class="lead">Trabajamos como aliado estratégico de organizaciones. Estas son áreas donde ECONECTION puede apoyar campañas de captación y comunicación social.</p>
             </div>
-            <div class="projects__grid">
-                <article class="project-card project-card--placeholder" data-animate>
-                    <div class="project-card__media"></div>
-                    <div class="project-card__body">
-                        <span class="project-card__tag">Impacto</span>
-                        <h3 class="project-card__title">Infancia y adolescencia</h3>
-                        <p class="project-card__meta">Campañas para proteger, educar y acompañar a nuevas generaciones.</p>
-                    </div>
-                </article>
-                <article class="project-card project-card--placeholder-2" data-animate data-animate-delay="1">
-                    <div class="project-card__media"></div>
-                    <div class="project-card__body">
-                        <span class="project-card__tag">Impacto</span>
-                        <h3 class="project-card__title">Medio ambiente</h3>
-                        <p class="project-card__meta">Captación para proyectos de conservación y sostenibilidad.</p>
-                    </div>
-                </article>
+        </div>
+        <div class="sticky-causes">
+            <div class="sticky-cause sticky-cause--1" data-sticky-cause>
+                <div class="sticky-cause__content">
+                    <span class="sticky-cause__tag">Impacto</span>
+                    <h3 class="sticky-cause__title">Infancia y adolescencia</h3>
+                    <p class="sticky-cause__desc">Campañas para proteger, educar y acompañar a nuevas generaciones.</p>
+                </div>
             </div>
-            <div class="projects__grid-row-2">
-                <article class="project-card project-card--placeholder-3" data-animate>
-                    <div class="project-card__media"></div>
-                    <div class="project-card__body">
-                        <span class="project-card__tag">Impacto</span>
-                        <h3 class="project-card__title">Salud y bienestar</h3>
-                        <p class="project-card__meta">Comunicación para programas de cuidado, prevención y acceso.</p>
-                    </div>
-                </article>
-                <article class="project-card project-card--placeholder-4" data-animate data-animate-delay="1">
-                    <div class="project-card__media"></div>
-                    <div class="project-card__body">
-                        <span class="project-card__tag">Impacto</span>
-                        <h3 class="project-card__title">Desarrollo comunitario</h3>
-                        <p class="project-card__meta">Movilización de apoyo para iniciativas locales y territoriales.</p>
-                    </div>
-                </article>
+            <div class="sticky-cause sticky-cause--2" data-sticky-cause>
+                <div class="sticky-cause__content">
+                    <span class="sticky-cause__tag">Impacto</span>
+                    <h3 class="sticky-cause__title">Medio ambiente</h3>
+                    <p class="sticky-cause__desc">Captación para proyectos de conservación y sostenibilidad.</p>
+                </div>
+            </div>
+            <div class="sticky-cause sticky-cause--3" data-sticky-cause>
+                <div class="sticky-cause__content">
+                    <span class="sticky-cause__tag">Impacto</span>
+                    <h3 class="sticky-cause__title">Salud y bienestar</h3>
+                    <p class="sticky-cause__desc">Comunicación para programas de cuidado, prevención y acceso.</p>
+                </div>
+            </div>
+            <div class="sticky-cause sticky-cause--4" data-sticky-cause>
+                <div class="sticky-cause__content">
+                    <span class="sticky-cause__tag">Impacto</span>
+                    <h3 class="sticky-cause__title">Desarrollo comunitario</h3>
+                    <p class="sticky-cause__desc">Movilización de apoyo para iniciativas locales y territoriales.</p>
+                </div>
             </div>
         </div>
     </section>

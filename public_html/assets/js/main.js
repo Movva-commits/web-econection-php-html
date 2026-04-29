@@ -313,4 +313,148 @@
         requestAnimationFrame(() => update(false));
     });
 
+    /* 8. STICKY CAUSES SCROLL SCALE ---------------------------------------- */
+    (function () {
+        const causes = Array.from(document.querySelectorAll('[data-sticky-cause]'));
+        if (!causes.length) return;
+
+        const SCALE_DIST = window.innerHeight * 5;
+        const state = causes.map(card => ({ card, pinY: null }));
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    const s = state.find(s => s.card === entry.target);
+                    if (s && s.pinY === null) s.pinY = window.scrollY;
+                    observer.unobserve(entry.target);
+                });
+            }, { rootMargin: '0px 0px -90% 0px', threshold: 0 });
+
+            causes.forEach(card => observer.observe(card));
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            state.forEach(({ card, pinY }) => {
+                if (pinY === null) return;
+                const past = scrollY - pinY;
+                if (past > 0) {
+                    const t = Math.min(past / SCALE_DIST, 1);
+                    card.style.transform = 'scale(' + (1 - t * 0.08).toFixed(4) + ')';
+                } else {
+                    card.style.transform = '';
+                }
+            });
+        }, { passive: true });
+    })();
+
+    /* 9. ANIMATED TESTIMONIALS --------------------------------------------- */
+    (function () {
+        const container = document.querySelector('[data-animated-test]');
+        if (!container) return;
+
+        const imgs   = Array.from(container.querySelectorAll('[data-at-img]'));
+        const slides = Array.from(container.querySelectorAll('[data-at-slide]'));
+        const prevBtn = container.querySelector('[data-at-prev]');
+        const nextBtn = container.querySelector('[data-at-next]');
+        const TOTAL = imgs.length;
+        let active = 0;
+        let busy = false;
+
+        // Random rotations for each image index (-10 to +10 deg)
+        const rots = imgs.map(() => Math.floor(Math.random() * 21) - 10);
+
+        // Build slide content from data attributes
+        slides.forEach(slide => {
+            const name  = slide.dataset.name  || '';
+            const role  = slide.dataset.role  || '';
+            slide.innerHTML =
+                '<span class="animated-test__name">' + name + '</span>' +
+                '<span class="animated-test__role">' + role + '</span>' +
+                '<p class="animated-test__text"></p>';
+        });
+
+        // Split quote into word spans with staggered blur-in animation
+        function renderWords(slide) {
+            const textEl = slide.querySelector('.animated-test__text');
+            const quote  = slide.dataset.quote || '';
+            if (!textEl || !quote) return;
+            textEl.innerHTML = quote.split(' ').map(function (word, i) {
+                return '<span class="at-word" style="animation-delay:' + (i * 0.02) + 's">' + word + ' </span>';
+            }).join('');
+        }
+
+        // Apply transforms to all images based on current active index
+        function applyStack(skipTransition) {
+            imgs.forEach(function (img, i) {
+                if (skipTransition) img.style.transition = 'none';
+
+                var isAct = (i === active);
+                var rot   = isAct ? 0 : rots[i];
+                var sc    = isAct ? 1 : 0.95;
+                var op    = isAct ? 1 : 0.7;
+                var zi    = isAct ? 40 : (TOTAL + 2 - ((i - active + TOTAL) % TOTAL));
+                var baseT = 'rotate(' + rot + 'deg) scale(' + sc + ')';
+
+                img.style.transform  = baseT;
+                img.style.opacity    = op;
+                img.style.zIndex     = zi;
+
+                if (skipTransition) {
+                    void img.offsetHeight; // force reflow
+                    img.style.transition = '';
+                }
+            });
+        }
+
+        // Show a slide and animate its text words
+        function showSlide(idx) {
+            slides.forEach(function (s, i) {
+                s.classList.toggle('is-active', i === idx);
+            });
+            renderWords(slides[idx]);
+        }
+
+        // Trigger bounce on active image
+        function bounce() {
+            var img = imgs[active];
+            img.classList.remove('is-bouncing');
+            void img.offsetHeight;
+            img.classList.add('is-bouncing');
+            img.addEventListener('animationend', function () {
+                img.classList.remove('is-bouncing');
+            }, { once: true });
+        }
+
+        function goTo(newIdx) {
+            if (busy || newIdx === active) return;
+            busy = true;
+            active = newIdx;
+            applyStack(false);
+            showSlide(active);
+            bounce();
+            setTimeout(function () { busy = false; }, 450);
+        }
+
+        prevBtn && prevBtn.addEventListener('click', function () {
+            goTo((active - 1 + TOTAL) % TOTAL);
+        });
+        nextBtn && nextBtn.addEventListener('click', function () {
+            goTo((active + 1) % TOTAL);
+        });
+
+        // Init
+        applyStack(true);
+        showSlide(0);
+        bounce();
+
+        // Autoplay
+        var timer = setInterval(function () { goTo((active + 1) % TOTAL); }, 5000);
+        container.addEventListener('mouseenter', function () { clearInterval(timer); });
+        container.addEventListener('mouseleave', function () {
+            timer = setInterval(function () { goTo((active + 1) % TOTAL); }, 5000);
+        });
+    })();
+
 })();
