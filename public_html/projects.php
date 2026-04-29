@@ -25,6 +25,43 @@ include __DIR__ . '/includes/nav.php';
         </div>
     </section>
 
+    <!-- Wobble Cards -->
+    <section class="wobble-section">
+        <div class="container">
+            <div class="wobble-grid">
+
+                <div class="wobble-card wobble-card--large wobble-card--navy" data-wobble>
+                    <div class="wobble-card__overlay"></div>
+                    <div class="wobble-card__inner">
+                        <span class="wobble-eyebrow">Alianza estratégica</span>
+                        <h2 class="wobble-card__title">Activamos campañas de captación con <em>propósito real</em></h2>
+                        <p class="wobble-card__text">Somos el aliado operativo de organizaciones sociales que necesitan activar donantes, comunicar su impacto y crecer de forma sostenible.</p>
+                        <a href="/contact.php" class="wobble-card__btn">Hablemos de tu campaña <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+
+                <div class="wobble-card wobble-card--blue" data-wobble>
+                    <div class="wobble-card__overlay"></div>
+                    <div class="wobble-card__inner">
+                        <span class="wobble-eyebrow">Impacto</span>
+                        <h3 class="wobble-card__title">+6 áreas de impacto social</h3>
+                        <p class="wobble-card__text">Desde infancia y educación hasta medio ambiente, salud y desarrollo comunitario.</p>
+                    </div>
+                </div>
+
+                <div class="wobble-card wobble-card--deep" data-wobble>
+                    <div class="wobble-card__overlay"></div>
+                    <div class="wobble-card__inner">
+                        <span class="wobble-eyebrow">Metodología</span>
+                        <h3 class="wobble-card__title">Comunicación directa que conecta y convierte</h3>
+                        <p class="wobble-card__text">Mensajes diseñados para resonar con donantes reales y aliados estratégicos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="section section--white">
         <div class="container">
             <div class="project-archive">

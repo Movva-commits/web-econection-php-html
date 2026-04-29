@@ -200,30 +200,10 @@ include __DIR__ . '/includes/nav.php';
     <section class="about-highlight">
         <div class="container">
             <div class="about-highlight__grid">
-                <div class="about-highlight__media" data-animate aria-hidden="true">
-                    <svg class="about-highlight__brush" viewBox="0 0 300 160" fill="none">
-                        <path d="M18 112C67 26 183 14 280 52C218 81 167 124 90 135C58 140 34 131 18 112Z" fill="#8CCB2A" opacity=".22"/>
-                    </svg>
+                <div class="about-highlight__media" data-animate>
                     <div class="about-highlight__heart">
-                        <svg viewBox="0 0 520 500" role="img" aria-label="Corazón en tonos azul y verde">
-                            <defs>
-                                <linearGradient id="heartBrand" x1="70" y1="60" x2="440" y2="440" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#1BA7D7"/>
-                                    <stop offset=".52" stop-color="#0C63C9"/>
-                                    <stop offset="1" stop-color="#59B52E"/>
-                                </linearGradient>
-                            </defs>
-                            <path d="M260 448C120 326 50 252 50 158C50 86 104 42 168 42C208 42 239 62 260 96C281 62 312 42 352 42C416 42 470 86 470 158C470 252 400 326 260 448Z" fill="url(#heartBrand)"/>
-                            <circle cx="169" cy="168" r="34" fill="rgba(255,255,255,.18)"/>
-                            <circle cx="350" cy="174" r="28" fill="rgba(255,255,255,.14)"/>
-                            <path d="M150 272C210 312 310 312 370 272" stroke="rgba(255,255,255,.32)" stroke-width="18" stroke-linecap="round"/>
-                        </svg>
+                        <img src="/assets/img/heart-survey-fundraising.png" width="1198" height="1313" alt="Encuesta de fundraising dentro de un corazón 360">
                     </div>
-                    <div class="about-highlight__years">
-                        <strong>360</strong>
-                        <span>fundraising</span>
-                    </div>
-                    <div class="about-highlight__chip">F2F</div>
                 </div>
 
                 <div class="about-highlight__content" data-animate data-animate-delay="1">
@@ -239,9 +219,6 @@ include __DIR__ . '/includes/nav.php';
                                 <h4>Conexiones con Causa</h4>
                                 <p>estrategia, equipos y comunicación directa</p>
                             </div>
-                        </div>
-                        <div class="about-highlight__avatars" aria-hidden="true">
-                            <span></span><span></span><span></span><span></span><span></span>
                         </div>
                     </div>
                     <div class="about-highlight__actions">

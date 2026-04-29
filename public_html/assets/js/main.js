@@ -457,4 +457,22 @@
         });
     })();
 
+    /* 9. WOBBLE CARDS --------------------------------------------------- */
+    document.querySelectorAll('[data-wobble]').forEach(function (card) {
+        var inner = card.querySelector('.wobble-card__inner');
+
+        card.addEventListener('mousemove', function (e) {
+            var rect = card.getBoundingClientRect();
+            var x = (e.clientX - (rect.left + rect.width  / 2)) / 20;
+            var y = (e.clientY - (rect.top  + rect.height / 2)) / 20;
+            card.style.transform  = 'translate3d(' + x + 'px,' + y + 'px,0) scale3d(1,1,1)';
+            if (inner) inner.style.transform = 'translate3d(' + (-x) + 'px,' + (-y) + 'px,0) scale3d(1.03,1.03,1)';
+        });
+
+        card.addEventListener('mouseleave', function () {
+            card.style.transform  = 'translate3d(0px,0px,0) scale3d(1,1,1)';
+            if (inner) inner.style.transform = 'translate3d(0px,0px,0) scale3d(1,1,1)';
+        });
+    });
+
 })();
