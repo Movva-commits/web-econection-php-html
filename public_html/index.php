@@ -170,8 +170,8 @@ include __DIR__ . '/includes/nav.php';
 
                 <article class="approach-card approach-card--move" data-animate data-animate-delay="2" tabindex="0">
                     <picture>
-                        <source type="image/webp" srcset="/uploads/optimized/group-of-children-holding-hands-together-2026-03-26-04-10-20-utc-640.webp 640w, /uploads/optimized/group-of-children-holding-hands-together-2026-03-26-04-10-20-utc-960.webp 960w, /uploads/optimized/group-of-children-holding-hands-together-2026-03-26-04-10-20-utc-1280.webp 1280w, /uploads/optimized/group-of-children-holding-hands-together-2026-03-26-04-10-20-utc-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 38vw">
-                        <img class="approach-card__image" src="/uploads/optimized/group-of-children-holding-hands-together-2026-03-26-04-10-20-utc-1600.jpg" width="2841" height="4256" alt="Grupo de manos como símbolo de movilización colectiva" decoding="async">
+                        <source type="image/webp" srcset="/uploads/optimized/portrait-of-schoolkids-forming-huddle-2026-01-09-09-12-06-utc-640.webp 640w, /uploads/optimized/portrait-of-schoolkids-forming-huddle-2026-01-09-09-12-06-utc-960.webp 960w, /uploads/optimized/portrait-of-schoolkids-forming-huddle-2026-01-09-09-12-06-utc-1280.webp 1280w, /uploads/optimized/portrait-of-schoolkids-forming-huddle-2026-01-09-09-12-06-utc-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 38vw">
+                        <img class="approach-card__image" src="/uploads/optimized/portrait-of-schoolkids-forming-huddle-2026-01-09-09-12-06-utc-1600.jpg" width="6720" height="4480" alt="Grupo de niños formando un círculo representando movilización colectiva" decoding="async">
                     </picture>
                     <div class="approach-card__shade" aria-hidden="true"></div>
                     <div class="approach-card__content">
