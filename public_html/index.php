@@ -206,22 +206,21 @@ include __DIR__ . '/includes/nav.php';
                     </div>
                 </div>
 
-                <div class="about-highlight__content" data-animate data-animate-delay="1">
-                    <span class="about-highlight__eyebrow">Sobre ECONECTION</span>
-                    <h2 class="about-highlight__title">Las grandes causas crecen cuando encuentran a las personas correctas</h2>
-                    <p class="about-highlight__lead">
+                <div class="about-highlight__content" data-animate data-animate-delay="1" data-copy-reveal>
+                    <span class="about-highlight__eyebrow copy-reveal copy-reveal--1">Sobre ECONECTION</span>
+                    <h2 class="about-highlight__title copy-reveal copy-reveal--2">Las grandes causas crecen cuando encuentran a las personas correctas</h2>
+                    <p class="about-highlight__lead copy-reveal copy-reveal--3">
                         Nacimos para crear conexiones con sentido: entre organizaciones que trabajan por un mundo mejor y personas que quieren formar parte del cambio. Combinamos estrategia, trabajo en campo y formación de equipos para impulsar campañas sociales con impacto real.
                     </p>
-                    <div class="about-highlight__mini">
+                    <div class="about-highlight__mini copy-reveal copy-reveal--4">
                         <div class="about-highlight__mini-text">
-                            <div class="about-highlight__mini-icon" aria-hidden="true">↗</div>
                             <div>
                                 <h4>Conexiones con Causa</h4>
                                 <p>estrategia, equipos y comunicación directa</p>
                             </div>
                         </div>
                     </div>
-                    <div class="about-highlight__actions">
+                    <div class="about-highlight__actions copy-reveal copy-reveal--5">
                         <a href="/about.php" class="about-highlight__cta"><span class="about-highlight__cta-icon">→</span>Conoce el enfoque</a>
                     </div>
                 </div>
@@ -262,8 +261,8 @@ include __DIR__ . '/includes/nav.php';
             <div class="sticky-cause sticky-cause--4" data-sticky-cause>
                 <div class="sticky-cause__content">
                     <span class="sticky-cause__tag">Impacto</span>
-                    <h3 class="sticky-cause__title">Desarrollo comunitario</h3>
-                    <p class="sticky-cause__desc">Movilización de apoyo para iniciativas locales y territoriales.</p>
+                    <h3 class="sticky-cause__title">Desarrollo empresarial</h3>
+                    <p class="sticky-cause__desc">Estrategias para conectar negocios, fortalecer su presencia y activar nuevas oportunidades de crecimiento.</p>
                 </div>
             </div>
         </div>
@@ -328,7 +327,7 @@ include __DIR__ . '/includes/nav.php';
         </div>
     </section>
 
-    <section class="stats">
+    <section class="stats" hidden>
         <div class="container">
             <div class="stats__grid stats__grid--five">
                 <div class="stat" data-animate><div class="stat__num"><small>+</small><span>X</span></div><div class="stat__label">años de experiencia</div></div>

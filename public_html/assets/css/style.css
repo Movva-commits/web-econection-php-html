@@ -826,16 +826,89 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 .sticky-cause:nth-child(3) { z-index: 3; }
 .sticky-cause:nth-child(4) { z-index: 4; }
 
-.sticky-cause--1 { background: linear-gradient(135deg, var(--color-secondary-2) 0%, var(--color-secondary) 100%); }
-.sticky-cause--2 { background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-soft) 100%); }
-.sticky-cause--3 { background: linear-gradient(135deg, var(--color-cream-2) 0%, var(--color-cream) 100%); }
-.sticky-cause--4 { background: linear-gradient(135deg, var(--color-secondary) 0%, #081A33 100%); }
+.sticky-cause--1 {
+    background:
+        linear-gradient(135deg, rgba(14, 39, 71, 0.68) 0%, rgba(8, 26, 51, 0.58) 100%),
+        image-set(
+            url("/uploads/little-girl-playing-on-the-meadow-in-wheat-field-2026-01-06-09-19-25-utc.webp") type("image/webp"),
+            url("/uploads/little-girl-playing-on-the-meadow-in-wheat-field-2026-01-06-09-19-25-utc.jpg") type("image/jpeg")
+        ) center 48% / cover no-repeat,
+        linear-gradient(135deg, var(--color-secondary-2) 0%, var(--color-secondary) 100%);
+}
+.sticky-cause--2 {
+    background:
+        linear-gradient(135deg, rgba(9, 78, 159, 0.62) 0%, rgba(12, 99, 201, 0.44) 100%),
+        image-set(
+            url("/uploads/young-boy-hiking-stanford-valley-guest-farm-stan-2026-03-25-06-01-23-utc.webp") type("image/webp"),
+            url("/uploads/young-boy-hiking-stanford-valley-guest-farm-stan-2026-03-25-06-01-23-utc.jpg") type("image/jpeg")
+        ) center 46% / cover no-repeat,
+        linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-soft) 100%);
+}
+.sticky-cause--3 {
+    background:
+        linear-gradient(135deg, rgba(238, 243, 248, 0.46) 0%, rgba(255, 250, 242, 0.38) 100%),
+        image-set(
+            url("/uploads/adults-meditating-outdoors-in-peaceful-green-envir-2026-01-08-00-08-52-utc.webp") type("image/webp"),
+            url("/uploads/adults-meditating-outdoors-in-peaceful-green-envir-2026-01-08-00-08-52-utc.jpg") type("image/jpeg")
+        ) center 48% / cover no-repeat,
+        linear-gradient(135deg, var(--color-cream-2) 0%, var(--color-cream) 100%);
+}
+.sticky-cause--4 {
+    background:
+        linear-gradient(135deg, rgba(14, 39, 71, 0.74) 0%, rgba(8, 26, 51, 0.68) 100%),
+        image-set(
+            url("/uploads/business-professionals-collaborating-on-strategy-i-2026-01-08-06-39-25-utc.webp") type("image/webp"),
+            url("/uploads/business-professionals-collaborating-on-strategy-i-2026-01-08-06-39-25-utc.jpg") type("image/jpeg")
+        ) center 46% / cover no-repeat,
+        linear-gradient(135deg, var(--color-secondary) 0%, #081A33 100%);
+}
+
+.sticky-cause--1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 26, 51, 0.22) 0%, rgba(8, 26, 51, 0.70) 100%),
+        rgba(12, 99, 201, 0.22);
+    z-index: 0;
+}
+
+.sticky-cause--2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 26, 51, 0.12) 0%, rgba(8, 26, 51, 0.62) 100%),
+        rgba(12, 99, 201, 0.18);
+    z-index: 0;
+}
+
+.sticky-cause--3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(238, 243, 248, 0.18) 0%, rgba(255, 250, 242, 0.44) 100%),
+        rgba(238, 243, 248, 0.10);
+    z-index: 0;
+}
+
+.sticky-cause--4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 26, 51, 0.18) 0%, rgba(8, 26, 51, 0.74) 100%),
+        rgba(14, 39, 71, 0.24);
+    z-index: 0;
+}
 
 .sticky-cause__content {
     position: absolute;
     bottom: 0; left: 0; right: 0;
     padding: clamp(28px, 5vh, 56px) clamp(32px, 6vw, 64px);
     color: white;
+    z-index: 1;
 }
 .sticky-cause--3 .sticky-cause__content { color: var(--color-secondary); }
 
@@ -1715,6 +1788,37 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 [data-animate-delay="3"] { transition-delay: .24s; }
 [data-animate-delay="4"] { transition-delay: .32s; }
 
+@keyframes copyRevealIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 22px, 0);
+        filter: blur(8px);
+        clip-path: inset(0 0 18% 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+[data-copy-reveal] .copy-reveal {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    filter: blur(8px);
+    will-change: opacity, transform, filter, clip-path;
+}
+[data-copy-reveal].is-visible .copy-reveal {
+    animation: copyRevealIn .95s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--copy-delay, 0s);
+}
+.copy-reveal--1 { --copy-delay: .05s; }
+.copy-reveal--2 { --copy-delay: .16s; }
+.copy-reveal--3 { --copy-delay: .27s; }
+.copy-reveal--4 { --copy-delay: .38s; }
+.copy-reveal--5 { --copy-delay: .49s; }
+
 /* Hero title — animación de entrada elegante */
 @keyframes heroTitleIn {
     from {
@@ -1763,6 +1867,13 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     }
     [data-animate] { opacity: 1; transform: none; }
     .hero__title[data-animate] { opacity: 1; transform: none; filter: none; }
+    [data-copy-reveal] .copy-reveal {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        clip-path: none;
+        animation: none;
+    }
 }
 
 /* ANIMATED TESTIMONIALS ------------------------------------------------- */
@@ -2433,7 +2544,7 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
   margin: 0 0 32px;
 }
 .about-highlight__mini-text {
-  display: flex; gap: 14px; align-items: center;
+  display: flex; gap: 0; align-items: center;
 }
 .about-highlight__mini-icon {
   width: 52px; height: 52px;

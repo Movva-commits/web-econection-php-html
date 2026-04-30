@@ -32,19 +32,34 @@ include __DIR__ . '/includes/nav.php';
                 <div class="animated-test__media" aria-hidden="true">
                     <div class="animated-test__stack">
                         <div class="animated-test__img" data-at-img="0">
-                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=600&auto=format&fit=crop" alt="">
+                            <picture>
+                                <source srcset="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc.webp" type="image/webp">
+                                <img src="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="1">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop" alt="">
+                            <picture>
+                                <source srcset="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc.webp" type="image/webp">
+                                <img src="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="2">
-                            <img src="https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=600&auto=format&fit=crop" alt="">
+                            <picture>
+                                <source srcset="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc.webp" type="image/webp">
+                                <img src="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="3">
-                            <img src="https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=600&auto=format&fit=crop" alt="">
+                            <picture>
+                                <source srcset="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc.webp" type="image/webp">
+                                <img src="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="4">
-                            <img src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=600&auto=format&fit=crop" alt="">
+                            <picture>
+                                <source srcset="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc.webp" type="image/webp">
+                                <img src="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc.jpg" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -52,29 +67,29 @@ include __DIR__ . '/includes/nav.php';
                 <div class="animated-test__body">
                     <div class="animated-test__quotes" data-at-quotes>
                         <div class="animated-test__slide" data-at-slide="0"
-                             data-name="Sarah Chen"
-                             data-role="Product Manager at TechFlow"
-                             data-quote="The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.">
+                             data-name="El impacto también abre oportunidades de crecimiento"
+                             data-role=""
+                             data-quote="Cuando una empresa se vincula con iniciativas sociales, ambientales o educativas, fortalece su relación con las personas, amplía su presencia y construye una participación más significativa en su entorno.">
                         </div>
                         <div class="animated-test__slide" data-at-slide="1"
-                             data-name="Michael Rodriguez"
-                             data-role="CTO at InnovateSphere"
-                             data-quote="Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.">
+                             data-name="Las alianzas multiplican el alcance de una buena idea"
+                             data-role=""
+                             data-quote="Un proyecto puede crecer más cuando encuentra empresas, instituciones o comunidades con objetivos compatibles. La colaboración permite sumar recursos, conocimiento, visibilidad y capacidad de acción.">
                         </div>
                         <div class="animated-test__slide" data-at-slide="2"
-                             data-name="Emily Watson"
-                             data-role="Operations Director at CloudScale"
-                             data-quote="This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.">
+                             data-name="La comunicación convierte interés en participación"
+                             data-role=""
+                             data-quote="Cuando una iniciativa se explica con claridad, las personas entienden mejor cómo involucrarse, qué valor aporta y por qué vale la pena formar parte. Un mensaje bien construido facilita la conexión.">
                         </div>
                         <div class="animated-test__slide" data-at-slide="3"
-                             data-name="James Kim"
-                             data-role="Engineering Lead at DataPro"
-                             data-quote="Outstanding support and robust features. It's rare to find a product that delivers on all its promises.">
+                             data-name="La sostenibilidad también forma parte de la estrategia"
+                             data-role=""
+                             data-quote="Cada vez más organizaciones integran sostenibilidad, responsabilidad social y participación comunitaria como parte de su manera de crecer, relacionarse y construir reputación.">
                         </div>
                         <div class="animated-test__slide" data-at-slide="4"
-                             data-name="Lisa Thompson"
-                             data-role="VP of Technology at FutureNet"
-                             data-quote="The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.">
+                             data-name="Medir el impacto ayuda a proyectarlo"
+                             data-role=""
+                             data-quote="Cuando una iniciativa muestra avances, resultados y aprendizajes, puede fortalecer su credibilidad, atraer mejores alianzas y sostener su crecimiento en el tiempo.">
                         </div>
                     </div>
 

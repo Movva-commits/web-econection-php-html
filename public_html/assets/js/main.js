@@ -371,7 +371,7 @@
             const role  = slide.dataset.role  || '';
             slide.innerHTML =
                 '<span class="animated-test__name">' + name + '</span>' +
-                '<span class="animated-test__role">' + role + '</span>' +
+                (role ? '<span class="animated-test__role">' + role + '</span>' : '') +
                 '<p class="animated-test__text"></p>';
         });
 
