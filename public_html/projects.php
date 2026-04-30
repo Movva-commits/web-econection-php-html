@@ -65,47 +65,47 @@ include __DIR__ . '/includes/nav.php';
     <section class="section section--white">
         <div class="container">
             <div class="project-archive">
-                <a class="project-archive__item" href="/contact.php" data-animate data-copy-reveal>
+                <article class="project-archive__item" data-animate data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Infancia y adolescencia"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Infancia y adolescencia</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Campañas para proteger, educar y acompañar a nuevas generaciones.</p>
-                </a>
+                </article>
 
-                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="1" data-copy-reveal>
+                <article class="project-archive__item" data-animate data-animate-delay="1" data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Medio ambiente"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Medio ambiente</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Captación para proyectos de conservación y sostenibilidad.</p>
-                </a>
+                </article>
 
-                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="2" data-copy-reveal>
+                <article class="project-archive__item" data-animate data-animate-delay="2" data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Salud y bienestar"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Salud y bienestar</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Comunicación para programas de cuidado, prevención y acceso.</p>
-                </a>
+                </article>
 
-                <a class="project-archive__item" href="/contact.php" data-animate data-copy-reveal>
+                <article class="project-archive__item" data-animate data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Desarrollo empresarial"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Desarrollo empresarial</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Estrategias para conectar negocios, fortalecer su presencia y activar nuevas oportunidades de crecimiento.</p>
-                </a>
+                </article>
 
-                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="1" data-copy-reveal>
+                <article class="project-archive__item" data-animate data-animate-delay="1" data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Educación"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Educación</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Campañas para programas de acceso, permanencia y aprendizaje.</p>
-                </a>
+                </article>
 
-                <a class="project-archive__item" href="/contact.php" data-animate data-animate-delay="2" data-copy-reveal>
+                <article class="project-archive__item" data-animate data-animate-delay="2" data-copy-reveal>
                     <div class="project-archive__media" role="img" aria-label="Cultura y comunidad"></div>
                     <span class="project-archive__tag copy-reveal copy-reveal--1">Impacto</span>
                     <h3 class="project-archive__title copy-reveal copy-reveal--2">Cultura y comunidad</h3>
                     <p class="project-archive__meta copy-reveal copy-reveal--3">Comunicación para iniciativas que fortalecen tejido social.</p>
-                </a>
+                </article>
             </div>
         </div>
     </section>

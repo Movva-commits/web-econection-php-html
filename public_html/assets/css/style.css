@@ -984,6 +984,9 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     background: var(--color-secondary);
     color: var(--color-cream);
 }
+.benefits h2 {
+    color: var(--color-cream);
+}
 .benefits__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1412,10 +1415,18 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     background: var(--color-cream-2);
     background-size: cover; background-position: center;
 }
-.service-row:nth-of-type(1) .service-row__visual { background: linear-gradient(135deg, #0C63C9, #094E9F); }
-.service-row:nth-of-type(2) .service-row__visual { background: linear-gradient(135deg, #143462, #0E2747); }
-.service-row:nth-of-type(3) .service-row__visual { background: linear-gradient(135deg, #EEF3F8, #E2E8F0); }
-.service-row:nth-of-type(4) .service-row__visual { background: linear-gradient(135deg, #0E2747, #143462); }
+.service-row:nth-of-type(1) .service-row__visual {
+    background-image: url('/uploads/signing-document-with-box-and-clipboard-delivery-2026-01-07-06-00-18-utc.jpg');
+}
+.service-row:nth-of-type(2) .service-row__visual {
+    background-image: url('/uploads/professional-team-collaborating-during-meeting-in-2026-01-09-11-49-47-utc.jpg');
+}
+.service-row:nth-of-type(3) .service-row__visual {
+    background-image: url('/uploads/graphic-design-workstation-with-computer-and-desig-2026-01-07-07-37-54-utc.jpg');
+}
+.service-row:nth-of-type(4) .service-row__visual {
+    background-image: url('/uploads/pexels-fauxels-3184405.jpg');
+}
 .service-row__content { max-width: 520px; }
 .service-row__features {
     margin-top: 24px;
@@ -1441,10 +1452,8 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 .project-archive__item {
     display: block;
     color: inherit;
-    transition: transform .3s var(--ease);
+    cursor: default;
 }
-.project-archive__item:hover { transform: translateY(-6px); color: inherit; }
-.project-archive__item:hover .project-archive__title { color: var(--color-primary); }
 
 .project-archive__media {
     aspect-ratio: 4/5;
@@ -1454,12 +1463,14 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     overflow: hidden;
     position: relative;
 }
-.project-archive__item:nth-child(6n+1) .project-archive__media { background: linear-gradient(135deg, #0C63C9, #094E9F); }
-.project-archive__item:nth-child(6n+2) .project-archive__media { background: linear-gradient(135deg, #143462, #0E2747); }
-.project-archive__item:nth-child(6n+3) .project-archive__media { background: linear-gradient(135deg, #EEF3F8, #E2E8F0); }
-.project-archive__item:nth-child(6n+4) .project-archive__media { background: linear-gradient(135deg, #094E9F, #143462); }
-.project-archive__item:nth-child(6n+5) .project-archive__media { background: linear-gradient(135deg, #0E2747, #081A33); }
-.project-archive__item:nth-child(6n+6) .project-archive__media { background: linear-gradient(135deg, #094E9F, #0C63C9); }
+.project-archive__item:nth-child(6n+1) .project-archive__media {
+    background-image: url('/uploads/rear-view-of-adorable-schoolchildren-walking-by-pa-2026-03-13-01-22-20-utc.jpg');
+}
+.project-archive__item:nth-child(6n+2) .project-archive__media { background-image: url('/assets/img/medio-ambiente.jpg'); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+3) .project-archive__media { background-image: url('/assets/img/salud-bienestar.jpg'); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+4) .project-archive__media { background-image: url('/assets/img/desarrollo-empresarial.jpg'); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+5) .project-archive__media { background-image: url('/assets/img/educacion.jpg'); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+6) .project-archive__media { background-image: url('/assets/img/cultura-comunidad.jpg'); background-size: cover; background-position: center; }
 
 .project-archive__tag {
     display: inline-block;
@@ -2293,7 +2304,6 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 
 /* Project archive tag */
 .project-archive__tag { background: var(--color-cream-2); color: var(--color-primary); }
-.project-archive__item:hover .project-archive__title { color: var(--color-primary); }
 
 /* Service-row checkmarks — green */
 .service-row__features li::before { color: var(--color-accent); }
