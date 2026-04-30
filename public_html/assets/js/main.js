@@ -375,13 +375,25 @@
                 '<p class="animated-test__text"></p>';
         });
 
+        function escapeHtml(value) {
+            return value.replace(/[&<>"']/g, function (char) {
+                return {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'
+                }[char];
+            });
+        }
+
         // Split quote into word spans with staggered blur-in animation
         function renderWords(slide) {
             const textEl = slide.querySelector('.animated-test__text');
             const quote  = slide.dataset.quote || '';
             if (!textEl || !quote) return;
-            textEl.innerHTML = quote.split(' ').map(function (word, i) {
-                return '<span class="at-word" style="animation-delay:' + (i * 0.02) + 's">' + word + ' </span>';
+            textEl.innerHTML = quote.trim().split(/\s+/).map(function (word, i) {
+                return '<span class="at-word" style="animation-delay:' + (i * 0.02) + 's">' + escapeHtml(word) + '</span>';
             }).join('');
         }
 

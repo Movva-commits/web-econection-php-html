@@ -1931,6 +1931,7 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 }
 .at-word {
     display: inline-block;
+    margin-right: 0.25em;
     animation: at-word-in 0.25s ease-in-out both;
 }
 
@@ -2254,6 +2255,7 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
 .section--dark .eyebrow,
 .benefits .eyebrow,
 .stats .eyebrow { color: var(--color-accent-2); }
+.benefits .italic-accent { color: var(--color-cream); }
 .cta-final .eyebrow { color: var(--color-accent-2) !important; }
 
 /* Program card icon — alternate hue per card */
