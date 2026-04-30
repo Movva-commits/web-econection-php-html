@@ -19,7 +19,7 @@ include __DIR__ . '/includes/nav.php';
             </p>
             <div class="thank-you__ctas">
                 <a href="/services.php" class="btn btn--primary">Ver servicios<span class="btn__arrow" aria-hidden="true">→</span></a>
-                <a href="/index.php" class="btn btn--ghost">Volver al inicio</a>
+                <a href="/" class="btn btn--ghost">Volver al inicio</a>
             </div>
         </div>
     </section>

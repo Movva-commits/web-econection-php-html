@@ -19,7 +19,7 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="page-header__inner">
                 <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-                    <a href="/index.php">Inicio</a>
+                    <a href="/">Inicio</a>
                     <span aria-hidden="true">/</span>
                     <span>Contacto</span>
                 </nav>

@@ -8,7 +8,7 @@
 
         <div class="site-footer__top">
             <div class="site-footer__brand">
-                <a href="/index.php" class="brand brand--light">
+                <a href="/" class="brand brand--light">
                     <img class="brand__logo" src="/assets/img/logo-econection-light.svg" alt="ECONECTION — Conexiones con Causa">
                 </a>
                 <p class="site-footer__tagline">

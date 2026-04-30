@@ -12,7 +12,7 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="page-header__inner">
                 <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-                    <a href="/index.php">Inicio</a>
+                    <a href="/">Inicio</a>
                     <span aria-hidden="true">/</span>
                     <span>Nosotros</span>
                 </nav>
@@ -33,32 +33,32 @@ include __DIR__ . '/includes/nav.php';
                     <div class="animated-test__stack">
                         <div class="animated-test__img" data-at-img="0">
                             <picture>
-                                <source srcset="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc.webp" type="image/webp">
-                                <img src="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc.jpg" alt="">
+                                <source srcset="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc-opt.webp" type="image/webp">
+                                <img src="/uploads/image-of-human-hands-holding-plant-shaped-like-arr-2026-04-13-23-48-58-utc.jpg" alt="" loading="lazy" decoding="async">
                             </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="1">
                             <picture>
-                                <source srcset="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc.webp" type="image/webp">
-                                <img src="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc.jpg" alt="">
+                                <source srcset="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc-opt.webp" type="image/webp">
+                                <img src="/uploads/business-deal-handshake-between-two-men-in-suits-2026-01-08-08-11-42-utc.jpg" alt="" loading="lazy" decoding="async">
                             </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="2">
                             <picture>
-                                <source srcset="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc.webp" type="image/webp">
-                                <img src="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc.jpg" alt="">
+                                <source srcset="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc-opt.webp" type="image/webp">
+                                <img src="/uploads/colorful-abstract-paper-cutouts-of-human-profiles-2026-03-25-08-21-03-utc.jpg" alt="" loading="lazy" decoding="async">
                             </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="3">
                             <picture>
-                                <source srcset="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc.webp" type="image/webp">
-                                <img src="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc.jpg" alt="">
+                                <source srcset="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc-opt.webp" type="image/webp">
+                                <img src="/uploads/crystal-ball-on-moss-in-green-forest-environment-2026-01-08-23-33-53-utc.jpg" alt="" loading="lazy" decoding="async">
                             </picture>
                         </div>
                         <div class="animated-test__img" data-at-img="4">
                             <picture>
-                                <source srcset="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc.webp" type="image/webp">
-                                <img src="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc.jpg" alt="">
+                                <source srcset="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc-opt.webp" type="image/webp">
+                                <img src="/uploads/business-colleagues-discussing-data-on-a-conferenc-2026-01-09-07-52-53-utc.jpg" alt="" loading="lazy" decoding="async">
                             </picture>
                         </div>
                     </div>

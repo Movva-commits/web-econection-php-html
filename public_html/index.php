@@ -202,7 +202,10 @@ include __DIR__ . '/includes/nav.php';
             <div class="about-highlight__grid">
                 <div class="about-highlight__media" data-animate>
                     <div class="about-highlight__heart">
-                        <img src="/assets/img/heart-survey-fundraising.png" width="1254" height="1254" alt="Captación Face to Face en un corazón">
+                        <picture>
+                                <source srcset="/assets/img/heart-survey-fundraising.webp" type="image/webp">
+                                <img src="/assets/img/heart-survey-fundraising.png" width="1254" height="1254" alt="Captación Face to Face en un corazón" loading="lazy" decoding="async">
+                            </picture>
                     </div>
                 </div>
 

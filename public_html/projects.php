@@ -12,7 +12,7 @@ include __DIR__ . '/includes/nav.php';
         <div class="container">
             <div class="page-header__inner" data-animate data-copy-reveal>
                 <nav class="page-header__breadcrumb copy-reveal copy-reveal--1" aria-label="Breadcrumb">
-                    <a href="/index.php">Inicio</a>
+                    <a href="/">Inicio</a>
                     <span aria-hidden="true">/</span>
                     <span>Causas</span>
                 </nav>

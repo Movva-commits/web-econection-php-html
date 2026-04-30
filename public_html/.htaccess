@@ -16,9 +16,12 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Forzar HTTPS (descomenta cuando tengas SSL activo en Hostinger)
-    # RewriteCond %{HTTPS} !=on
-    # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+    # Forzar HTTPS — activo (SSL gratuito de Hostinger)
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    # /index y /index.php siempre redirigen al raíz
+    RewriteRule ^index(\.php)?/?$ / [R=301,L]
 
     # Quitar el .php de la URL: /about en lugar de /about.php
     RewriteCond %{REQUEST_FILENAME} !-d

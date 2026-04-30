@@ -1416,16 +1416,16 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     background-size: cover; background-position: center;
 }
 .service-row:nth-of-type(1) .service-row__visual {
-    background-image: url('/uploads/signing-document-with-box-and-clipboard-delivery-2026-01-07-06-00-18-utc.jpg');
+    background-image: image-set(url('/uploads/signing-document-with-box-and-clipboard-delivery-2026-01-07-06-00-18-utc.webp') type("image/webp"), url('/uploads/signing-document-with-box-and-clipboard-delivery-2026-01-07-06-00-18-utc.jpg') type("image/jpeg"));
 }
 .service-row:nth-of-type(2) .service-row__visual {
-    background-image: url('/uploads/professional-team-collaborating-during-meeting-in-2026-01-09-11-49-47-utc.jpg');
+    background-image: image-set(url('/uploads/professional-team-collaborating-during-meeting-in-2026-01-09-11-49-47-utc.webp') type("image/webp"), url('/uploads/professional-team-collaborating-during-meeting-in-2026-01-09-11-49-47-utc.jpg') type("image/jpeg"));
 }
 .service-row:nth-of-type(3) .service-row__visual {
-    background-image: url('/uploads/graphic-design-workstation-with-computer-and-desig-2026-01-07-07-37-54-utc.jpg');
+    background-image: image-set(url('/uploads/graphic-design-workstation-with-computer-and-desig-2026-01-07-07-37-54-utc.webp') type("image/webp"), url('/uploads/graphic-design-workstation-with-computer-and-desig-2026-01-07-07-37-54-utc.jpg') type("image/jpeg"));
 }
 .service-row:nth-of-type(4) .service-row__visual {
-    background-image: url('/uploads/pexels-fauxels-3184405.jpg');
+    background-image: image-set(url('/uploads/pexels-fauxels-3184405.webp') type("image/webp"), url('/uploads/pexels-fauxels-3184405.jpg') type("image/jpeg"));
 }
 .service-row__content { max-width: 520px; }
 .service-row__features {
@@ -1464,13 +1464,13 @@ h4 { font-size: 1.15rem; font-family: var(--font-body); font-weight: 600; letter
     position: relative;
 }
 .project-archive__item:nth-child(6n+1) .project-archive__media {
-    background-image: url('/uploads/rear-view-of-adorable-schoolchildren-walking-by-pa-2026-03-13-01-22-20-utc.jpg');
+    background-image: image-set(url('/uploads/rear-view-of-adorable-schoolchildren-walking-by-pa-2026-03-13-01-22-20-utc.webp') type("image/webp"), url('/uploads/rear-view-of-adorable-schoolchildren-walking-by-pa-2026-03-13-01-22-20-utc.jpg') type("image/jpeg"));
 }
-.project-archive__item:nth-child(6n+2) .project-archive__media { background-image: url('/assets/img/medio-ambiente.jpg'); background-size: cover; background-position: center; }
-.project-archive__item:nth-child(6n+3) .project-archive__media { background-image: url('/assets/img/salud-bienestar.jpg'); background-size: cover; background-position: center; }
-.project-archive__item:nth-child(6n+4) .project-archive__media { background-image: url('/assets/img/desarrollo-empresarial.jpg'); background-size: cover; background-position: center; }
-.project-archive__item:nth-child(6n+5) .project-archive__media { background-image: url('/assets/img/educacion.jpg'); background-size: cover; background-position: center; }
-.project-archive__item:nth-child(6n+6) .project-archive__media { background-image: url('/assets/img/cultura-comunidad.jpg'); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+2) .project-archive__media { background-image: image-set(url('/assets/img/medio-ambiente.webp') type("image/webp"), url('/assets/img/medio-ambiente.jpg') type("image/jpeg")); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+3) .project-archive__media { background-image: image-set(url('/assets/img/salud-bienestar.webp') type("image/webp"), url('/assets/img/salud-bienestar.jpg') type("image/jpeg")); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+4) .project-archive__media { background-image: image-set(url('/assets/img/desarrollo-empresarial.webp') type("image/webp"), url('/assets/img/desarrollo-empresarial.jpg') type("image/jpeg")); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+5) .project-archive__media { background-image: image-set(url('/assets/img/educacion.webp') type("image/webp"), url('/assets/img/educacion.jpg') type("image/jpeg")); background-size: cover; background-position: center; }
+.project-archive__item:nth-child(6n+6) .project-archive__media { background-image: image-set(url('/assets/img/cultura-comunidad.webp') type("image/webp"), url('/assets/img/cultura-comunidad.jpg') type("image/jpeg")); background-size: cover; background-position: center; }
 
 .project-archive__tag {
     display: inline-block;

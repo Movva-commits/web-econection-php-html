@@ -4,7 +4,7 @@
  * Resalta el enlace activo según $current_page (definida en cada página antes del header).
  */
 $nav_items = [
-    'home'     => ['label' => 'Inicio',     'href' => '/index.php'],
+    'home'     => ['label' => 'Inicio',     'href' => '/'],
     'about'    => ['label' => 'Nosotros',   'href' => '/about.php'],
     'services' => ['label' => 'Servicios',  'href' => '/services.php'],
     'projects' => ['label' => 'Causas',     'href' => '/projects.php'],
@@ -15,7 +15,7 @@ $current_page = $current_page ?? '';
 <header class="site-header" id="siteHeader">
     <div class="container site-header__inner">
 
-        <a href="/index.php" class="brand" aria-label="econection — ir al inicio">
+        <a href="/" class="brand" aria-label="econection — ir al inicio">
             <img class="brand__logo" src="/assets/img/logo-econection.svg" alt="ECONECTION — Conexiones con Causa">
         </a>
 
